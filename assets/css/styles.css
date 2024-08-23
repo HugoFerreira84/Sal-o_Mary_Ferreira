@@ -1,0 +1,727 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+nav {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav .logo {
+    padding-left: 25px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #FF4081;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+/* Estilos para o Header */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 20px 0;  /* Ajustei o padding para não interferir com o width */
+    transition: background-color 0.5s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;  /* Centralizando os itens */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    padding: 8px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background-color: #e7c3d0;
+    list-style: none;
+    text-decoration: none;
+    transition: 300ms;
+    border-radius: 6px;
+    color: #FF4081;
+}
+
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #FF4081;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e73170;
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#services .services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.boas-vindas p{
+    font-size: x-large;
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 40%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials */
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Contato */
+#contato {
+    background-color: #111;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#contato h2 {
+    font-size: 2.5em;
+    color: #00FF88; /* Cor futurista estilo neon */
+    margin-bottom: 40px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#contact-form {
+    background-color: #222;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 255, 136, 0.3);
+    width: 400px;
+    max-width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+    box-shadow: inset 0 0 5px rgba(0, 255, 136, 0.3);
+    font-size: 1em;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.btn-send {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background-color: #00FF88;
+    color: black;
+    font-size: 1.2em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-send:hover {
+    background-color: #00cc6e;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 400px;
+}
+
+.contact-info h4 {
+    color: #00FF88;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon {
+    color: #00FF88;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.social-icon:hover {
+    border-color: #00FF88;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../../assets/img/hero-1.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-content h1, .hero-content p, .hero-content .btn {
+    transform: translateY(50px);
+    opacity: 0;
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .hero {
+        height: 30vh; /* Ajusta a altura para caber melhor em telas menores */
+        padding: 10px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}
+
+/* Seção de Serviços */
+#servicos {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#servicos h2 {
+    font-size: 2.5em;
+    color: #FF4081;
+    margin-bottom: 40px;
+}
+
+.services-feed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo dos Cards de Serviço */
+.service-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Ícone de Serviço */
+.card-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Conteúdo do Card */
+.card-content h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Botão de Ação */
+.btn-service {
+    background-color: #FF4081;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-service:hover {
+    background-color: #e73170;
+}
+
+
+
+/* Section Styling */
+section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+#services .services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Gallery */
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-img {
+    width: 40%;
+    margin: 10px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Seção de Depoimentos */
+#depoimentos {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#depoimentos h2 {
+    font-size: 2.5em;
+    color: #FF4081;
+    margin-bottom: 40px;
+}
+
+.testimonial-feed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card-user h4 {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.card-user p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.card-content p {
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #333;
+}
+
+/* Seção de Colorimetria */
+#colorimetria {
+    background-color: #f7f7f7;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#colorimetria h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FF4081;
+}
+
+#colorimetria p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+/* Galeria Horizontal */
+.horizontal-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente as imagens */
+    gap: 20px;
+    padding: 20px 0;
+    overflow-x: auto; /* Permite rolagem horizontal */
+    scroll-behavior: smooth;
+    margin: 0; /* Remove margens que podem criar rolagem indesejada */
+}
+
+.horizontal-gallery::-webkit-scrollbar {
+    height: 8px;
+}
+
+.horizontal-gallery::-webkit-scrollbar-thumb {
+    background-color: #FF4081;
+    border-radius: 10px;
+}
+
+/* Remover barra de rolagem horizontal extra */
+body {
+    overflow-x: hidden; /* Garante que a página não possa rolar horizontalmente */
+}
+
+.gallery-item {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.close {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    max-width: 60%;
+    max-height: 90%;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/*Team*/
+/* Seção da Equipe */
+#team {
+    background-color: #f3f3f3;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#team h2 {
+    font-size: 2.5em;
+    color: #FF4081;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif; /* Adiciona uma fonte sofisticada */
+}
+
+/* Estilo do Feed da Equipe */
+.team-feed {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo dos Cards da Equipe */
+.team-card {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.team-photo {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.team-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover .team-photo img {
+    transform: scale(1.1); /* Zoom suave na imagem ao passar o mouse */
+}
+
+/* Conteúdo do Card */
+.team-content h4 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-content p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #777;
+    font-style: italic;
+}
+
+/* Ícones das Redes Sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-icon {
+    color: #FF4081;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icon a{
+    color: #00FF88;
+}
+
+.social-icon:hover {
+    color: #333;
+}
+

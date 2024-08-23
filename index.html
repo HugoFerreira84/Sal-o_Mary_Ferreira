@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <style>
+        .whats{ position: fixed; bottom: 30px; right: 30px; z-index: 9999;}
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo"><img src="./assets/img/logo.png" alt=""></div>
+        <ul>
+            <li><a href="#welcome">Home</a></li>
+            <li><a href="#colorimetria">Loiros</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Banner -->
+    <header class="hero" id="welcome">
+        <div class="hero-content">
+            <h1>Salão de Beleza Mary Ferreira</h1>
+            <p>Transformando sonhos em realidade, um look de cada vez</p>
+        </div>
+    </header>
+
+    <!-- Seção de Boas-Vindas -->
+    <section class="boas-vindas">
+        <h2>Bem-vindas ao Salão de Beleza Mary Ferreira!</h2>
+        <p>Somos um espaço de beleza que oferece serviços de alta qualidade para tornar você ainda mais linda e
+            confiante.
+            Nossa equipe de profissionais é treinada para atender às suas necessidades e desejos, garantindo que você se
+            sinta em casa.</p>
+    </section>
+
+    <!-- Seção de Galeria de Colorimetria com Rolagem Horizontal e Modal -->
+    <section id="colorimetria">
+        <h2>Especialista em Colorimetria</h2>
+        <p>
+            No Salão de Beleza Mary Ferreira, somos especialistas em transformar o seu cabelo com os mais belos tons de
+            loiro.
+            Desde os loiros platinados aos loiros dourados e morenos iluminados, usamos técnicas de colorimetria
+            avançadas para alcançar o
+            tom perfeito para cada cliente.
+        </p>
+        <div class="horizontal-gallery">
+            <div class="gallery-item" data-image="./assets/img/salao/1.jpeg">
+                <img src="./assets/img/salao/1.jpeg" alt="Loiro Platinado">
+            </div>
+            <div class="gallery-item" data-image="./assets/img/salao/2.jpeg">
+                <img src="./assets/img/salao/2.jpeg" alt="Loiro Dourado">
+            </div>
+            <div class="gallery-item" data-image="./assets/img/salao/3.jpeg">
+                <img src="./assets/img/salao/3.jpeg" alt="Loiro Acinzentado">
+            </div>
+            <div class="gallery-item" data-image="./assets/img/salao/4.jpeg">
+                <img src="./assets/img/salao/4.jpeg" alt="Loiro Platinado">
+            </div>
+            <div class="gallery-item" data-image="./assets/img/salao/5.jpeg">
+                <img src="./assets/img/salao/5.jpeg" alt="Loiro Dourado">
+            </div>
+            <div class="gallery-item" data-image="./assets/img/salao/6.jpeg">
+                <img src="./assets/img/salao/6.jpeg" alt="Loiro Dourado">
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para Exibir Imagem Ampliada -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+
+    <!-- Serviços
+    <section id="services">
+        <h2>Nossos Serviços</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Corte de Cabelo</h3>
+                <p>Transforme seu visual com um corte moderno e estiloso.</p>
+            </div>
+            <div class="service-card">
+                <h3>Coloração</h3>
+                <p>Revitalize seu cabelo com colorações de alta qualidade.</p>
+            </div>
+            <div class="service-card">
+                <h3>Maquiagem</h3>
+                <p>Prepare-se para qualquer ocasião com nossas maquiagens profissionais.</p>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Seção de Serviços -->
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="services-feed">
+            <div class="service-card">
+                <div class="card-icon">
+                    <img src="./assets/avatars/cortejpg.jpg" alt="Ícone Corte de Cabelo">
+                </div>
+                <div class="card-content">
+                    <h4>Corte de Cabelo</h4>
+                    <p>Transforme seu visual com um corte moderno e estiloso.</p>
+                    <button class="btn-service">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-icon">
+                    <img src="./assets/avatars/coloracao.webp" alt="Ícone Coloração de Cabelo">
+                </div>
+                <div class="card-content">
+                    <h4>Coloração de Cabelo</h4>
+                    <p>Revitalize seu cabelo com colorações de alta qualidade.</p>
+                    <button class="btn-service">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-icon">
+                    <img src="./assets/avatars/maquiagemjpg.jpg" alt="Ícone Massagem">
+                </div>
+                <div class="card-content">
+                    <h4>Maquiagem</h4>
+                    <p>Relaxe e cuide de si mesma.</p>
+                    <button class="btn-service">Saiba Mais</button>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="card-icon">
+                    <img src="./assets/avatars/nail.webp" alt="Ícone Massagem">
+                </div>
+                <div class="card-content">
+                    <h4>Nail Design</h4>
+                    <p>Tratamento para suas unhas.</p>
+                    <button class="btn-service">Saiba Mais</button>
+                </div>
+            </div>
+
+            <!-- Adicione mais serviços conforme necessário -->
+        </div>
+    </section>
+
+
+    <!-- Galeria -->
+    <section id="gallery">
+        <h2 style="color: #e73170;">Galeria de Fotos</h2>
+        <div class="gallery">
+            <img src="./assets/img/galeria/1.jpeg" alt="Antes e depois" class="gallery-img" data-image="./assets/img/galeria/1.jpeg">
+            <img src="./assets/img/galeria/2.jpeg" alt="Profissionais em ação" class="gallery-img" data-image="./assets/img/galeria/2.jpeg">
+            <img src="./assets/img/galeria/3.jpeg" alt="Produtos de alta qualidade" class="gallery-img" data-image="./assets/img/galeria/3.jpeg">
+            <img src="./assets/img/galeria/4.jpeg" alt="Antes e depois" class="gallery-img" data-image="./assets/img/galeria/4.jpeg">
+            <img src="./assets/img/galeria/5.jpeg" alt="Profissionais em ação" class="gallery-img" data-image="./assets/img/galeria/5.jpeg">
+        </div>
+    </section>
+
+    <!-- Modal para Exibir Imagem -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Imagem Ampliada">
+    </div>
+
+    <!--Team-->
+    <!-- Seção da Equipe -->
+<section id="team">
+    <h2>Conheça Nossa Equipe</h2>
+    <div class="team-feed">
+        <div class="team-card">
+            <div class="team-photo">
+                <img src="./assets/img/team/mary.jpeg" alt="Equipe Mary Ferreira">
+            </div>
+            <div class="team-content">
+                <h4>Mary Ferreira</h4>
+                <p>Fundadora & Especialista em Colorimetria</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">
+                <img src="./assets/img/team/tai.jpeg" alt="Equipe Joana Lima">
+            </div>
+            <div class="team-content">
+                <h4>Tailini</h4>
+                <p>Nail Design & Manicure</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">
+                <img src="./assets/img/team/team.jpeg" alt="Equipe Joana Lima">
+            </div>
+            <div class="team-content">
+                <h4>Time Mary Ferreira</h4>
+                <p>Prepadas pra te atender!</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">
+                <img src="./assets/img/team/jaque.jpeg" alt="Bruna">
+            </div>
+            <div class="team-content">
+                <h4>Jaqueline</h4>
+                <p>Esteticista & Design de Sobrancelhas</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="team-card">
+            <div class="team-photo">
+                <img src="./assets/img/team/bruna.jpeg" alt="Bruna">
+            </div>
+            <div class="team-content">
+                <h4>Bruna</h4>
+                <p>Assistente</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- Adicione mais membros conforme necessário -->
+    </div>
+</section>
+
+
+
+    <!-- Seção de Depoimentos no Estilo Feed do Instagram -->
+    <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="testimonial-feed">
+            <div class="testimonial-card">
+                <div class="card-header">
+                    <img src="./assets/avatars/avatar.png" alt="Avatar de Ana" class="avatar">
+                    <div class="card-user">
+                        <h4>Ana</h4>
+                        <p>@ana_lovesbeauty</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p>"O salão de Mary Ferreira é o meu refúgio! Sempre me sinto bem cuidada e atendida."</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="card-header">
+                    <img src="./assets/avatars/avatar1.jpg" alt="Avatar de Joana" class="avatar">
+                    <div class="card-user">
+                        <h4>Joana</h4>
+                        <p>@joana_hairstyle</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p>"A Mary é uma artista! Meu cabelo nunca ficou tão bonito!"</p>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="card-header">
+                    <img src="./assets/avatars/avatar1.jpg" alt="Avatar de Joana" class="avatar">
+                    <div class="card-user">
+                        <h4>Joana</h4>
+                        <p>@joana_hairstyle</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p>"A Mary é uma artista! Meu cabelo nunca ficou tão bonito!"</p>
+                </div>
+            </div>
+
+
+            <div class="testimonial-card">
+                <div class="card-header">
+                    <img src="./assets/avatars/avatar2.jpg" alt="Avatar de Carlos" class="avatar">
+                    <div class="card-user">
+                        <h4>Carlos</h4>
+                        <p>@carlos_style</p>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <p>"O atendimento é sempre cordial e profissional. Recomendo!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seção de Contato com Visual Futurista -->
+    <section id="contato">
+        <h2>Fale Conosco</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Sua Mensagem</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn-send">Enviar Mensagem</button>
+            </form>
+            <div class="contact-info">
+                <h4>Contato Direto</h4>
+                <p>Endereço: Rua João Batista de Moraes, nº 34, Bairro Jardim Paraiso</p>
+                <p>Telefone: (11) 94554-3542</p>
+                <p>E-mail: camarymsalaodebeleza@gmail.com</p>
+                <h4>Nossas Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" style="color: #00FF88;">&nbsp;&nbsp;Facebook</a>
+                    <a href="#" class="social-icon" style="color: #00FF88;">&nbsp;&nbsp;Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="whats">
+        <a href="https://wa.me/5511945543542?text=Olá agende seu horário!" target="_blank">
+            <img  style="width:75px" src="./assets/img/whatsapp.png" alt="Botão whatsapp para agendamento!" title="Fale conosco pelo whatsapp!">
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Salão de Beleza Mary Ferreira. Todos os direitos reservados.</p>
+        <p>Desenvolvido por [Seu Nome]</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/fontawesome.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("T75g8iN7hFzON_zU-"); // Substitua YOUR_USER_ID pelo seu User ID do EmailJS
+        })();
+    </script>
+
+</body>
+
+</html>
